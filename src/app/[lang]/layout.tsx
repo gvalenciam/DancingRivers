@@ -1,7 +1,8 @@
 import React from "react";
+import DRHeader from "@/components/DancingRivers/Layout/DRHeader";
 import DRFooter from "@/components/DancingRivers/Layout/DRFooter";
-import "../globals.css";
 import { defaultLocale } from "../../middleware";
+import "../globals.css";
 
 export default function RootLayout({
   children,
@@ -13,7 +14,8 @@ export default function RootLayout({
   return (
     <>
       <html lang={params.lang ?? defaultLocale}>
-        <body>
+        <body className="overflow-x-clip">
+          <DRHeader language={params.lang ?? defaultLocale}></DRHeader>
           {children}
           <DRFooter language={params.lang ?? defaultLocale}></DRFooter>
         </body>

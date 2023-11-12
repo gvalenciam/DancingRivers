@@ -2,12 +2,14 @@ import { LinearGradient } from "react-text-gradients";
 import theme from "@/utils/themeUtils";
 import { FC } from "react";
 import DRTextLabel from "../Label/DRTextLabel";
-import DRImageCircleIcon from "../DRImageCircleIcon/DRImageCircleIcon";
+import DRImageCircleIcon from "../ImageCircleIcon/DRImageCircleIcon";
 
 interface StatisticCardProps extends React.HTMLAttributes<HTMLDivElement> {
   text: string;
   numberText: string;
   circleClassName?: string;
+  imageClassName?: string;
+  imageBackgroundColor?: string;
 }
 
 export const StatisticCard: FC<StatisticCardProps> = ({
@@ -15,6 +17,8 @@ export const StatisticCard: FC<StatisticCardProps> = ({
   numberText,
   className,
   circleClassName,
+  imageClassName,
+  imageBackgroundColor,
 }) => {
   return (
     <div className={`fccc gap-5 max-w-[235px] ${className} `}>
@@ -22,7 +26,9 @@ export const StatisticCard: FC<StatisticCardProps> = ({
       <DRImageCircleIcon
         src="/icons/buttonArrow.svg"
         alt="circle-icon"
-        className={circleClassName}
+        imageContainerClassName={circleClassName}
+        imageClassName={imageClassName}
+        backgroundColor={imageBackgroundColor}
       ></DRImageCircleIcon>
       {/****** Text ******/}
       <DRTextLabel text={text} className="text-center"></DRTextLabel>

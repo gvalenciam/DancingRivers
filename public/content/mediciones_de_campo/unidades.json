@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Hidrodinámica",
+    "description": "Permite obtener la cantidad de agua (caudal) y distribución de velocidades que pasa en una sección transversal del río. ",
+    "href": "/metodologia/mediciones-de-campo/unidad-hidrodinamica",
+    "imageSrc": "/images/metodologia/mediciones_de_campo/unidades/UHD.png",
+    "imageWidth": 487,
+    "imageWidthPercentage": 100,
+    "alignment": "default"
+  },
+  {
+    "name": "Hidrogeomorfológica",
+    "description": "Permite determinar, mediante mediciones batimétricas longitudinales al río, el transporte de fondo, es decir, el movimiento de las dunas en un periodo de tiempo.",
+    "href": "/metodologia/mediciones-de-campo/unidad-hidrogeomorfologica",
+    "imageSrc": "/images/metodologia/mediciones_de_campo/unidades/UHG.png",
+    "imageWidth": 487,
+    "imageWidthPercentage": 100,
+    "alignment": "reverse"
+  },
+  {
+    "name": "Hidrosedimentológica",
+    "description": "Permite obtener el transporte del sedimento suspendido en una sección transversal, para lo cual, se realiza una caracterización espacial y temporal de la concentración y distribución del tamaño de grano para el material fino (arcillas y limos) y grueso (arenas) en cinco verticales a lo largo de la sección.",
+    "href": "/metodologia/mediciones-de-campo/unidad-hidrosedimentologica",
+    "imageSrc": "/images/metodologia/mediciones_de_campo/unidades/UHS.png",
+    "imageWidth": 487,
+    "imageWidthPercentage": 100,
+    "alignment": "default"
+  }
+]

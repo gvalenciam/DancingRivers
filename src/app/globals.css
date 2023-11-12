@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ::-webkit-scrollbar {
-  background: #d7f4e9;
-  width: 10px;
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
 }
 
-&::-webkit-scrollbar-thumb {
-  background: #3dc694;
+/* &::-webkit-scrollbar-thumb {
+  width: 2.5px;
+  background-color: red;
+} */
+
+/* &::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   padding: 2px;
   margin: 2px;
@@ -394,6 +399,15 @@
   }
   .fcae {
     @apply flex flex-col justify-around items-end;
+  }
+  .fcss {
+    @apply flex flex-col justify-start items-start;
+  }
+  .fcse {
+    @apply flex flex-col justify-start items-end;
+  }
+  .fcse {
+    @apply flex flex-col justify-start items-end;
   }
 }
 

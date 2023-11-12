@@ -1,7 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import ContainerPadding from "../../Base/Container/Padding/ContainerPadding";
-import DRImageCircleIcon from "../DRImageCircleIcon/DRImageCircleIcon";
+import DRImageCircleIcon from "../ImageCircleIcon/DRImageCircleIcon";
 import IconText from "../../Base/IconText/IconText";
 import DRTextLabel from "../Label/DRTextLabel";
 import BaseContainer from "../../Base/Container/BaseContainer";
@@ -13,6 +12,7 @@ interface DRFooterProps {
 }
 
 export const DRFooter: FC<DRFooterProps> = ({ language }) => {
+  const year = new Date().getFullYear();
   return (
     <BaseContainer className="px-[160px] py-[100px] bg-black fbs">
       <div className="fccs gap-16 px-5">
@@ -26,28 +26,32 @@ export const DRFooter: FC<DRFooterProps> = ({ language }) => {
         {/****** Contact Info ******/}
         <div className="fccs gap-9">
           <IconText
-            src="/icons/buttonArrow.svg"
+            src="/icons/location.svg"
+            imageContainerClassName="p-2 bg-white rounded-full"
             imageClassName="w-7 h-7"
             text="Jr. Medrano Silva 165 Barranco"
             textClassName="text-textWhiteLight tt10"
             alt="Address icon"
           ></IconText>
           <IconText
-            src="/icons/buttonArrow.svg"
+            src="/icons/phone.svg"
+            imageContainerClassName="p-2 bg-white rounded-full"
             imageClassName="w-7 h-7"
             text="(01) 2305020 Anexo 4295"
             textClassName="text-textWhiteLight tt10"
             alt="Address icon"
           ></IconText>
           <IconText
-            src="/icons/buttonArrow.svg"
+            src="/icons/web_black.svg"
+            imageContainerClassName="p-2 bg-white rounded-full"
             imageClassName="w-7 h-7"
             text="cita.utec.edu.pe"
             textClassName="text-textWhiteLight tt10"
             alt="Address icon"
           ></IconText>
           <IconText
-            src="/icons/buttonArrow.svg"
+            src="/icons/mail.svg"
+            imageContainerClassName="p-2 bg-white rounded-full"
             imageClassName="w-7 h-7"
             text="cita@utec.edu.pe"
             textClassName="text-textWhiteLight tt10"
@@ -55,45 +59,55 @@ export const DRFooter: FC<DRFooterProps> = ({ language }) => {
           ></IconText>
         </div>
         {/****** Copyright ******/}
-        <DRTextLabel
-          text={`${new Date().getFullYear()}`}
-          className="text-textWhiteLight"
-        >
+        <DRTextLabel text={`${year}`} className="text-textWhiteLight">
           &copy; Centro de Investigación y Tecnología del Agua - UTEC
         </DRTextLabel>
       </div>
-      <div className="fcce gap-12">
+      <div className="fcbe gap-12">
         {/****** Social ******/}
         <div className="fcc gap-8 py-9">
           <Link href="">
             <DRImageCircleIcon
-              src="/icons/buttonArrow.svg"
+              src="/icons/youtube.svg"
               backgroundColor="#FFFFFF"
-              className="p-2 h-12 w-12"
+              imageContainerClassName="p-2"
+              imageClassName="h-7 w-7"
               alt="facebook link"
             ></DRImageCircleIcon>
           </Link>
           <Link href="">
             <DRImageCircleIcon
-              src="/icons/buttonArrow.svg"
+              src="/icons/linkedin.svg"
               backgroundColor="#FFFFFF"
-              className="p-2 h-12 w-12"
+              imageContainerClassName="p-2"
+              imageClassName="h-7 w-7"
               alt="facebook link"
             ></DRImageCircleIcon>
           </Link>
           <Link href="">
             <DRImageCircleIcon
-              src="/icons/buttonArrow.svg"
+              src="/icons/instagram.svg"
               backgroundColor="#FFFFFF"
-              className="p-2 h-12 w-12"
+              imageContainerClassName="p-2"
+              imageClassName="h-7 w-7"
               alt="facebook link"
             ></DRImageCircleIcon>
           </Link>
           <Link href="">
             <DRImageCircleIcon
-              src="/icons/buttonArrow.svg"
+              src="/icons/facebook.svg"
               backgroundColor="#FFFFFF"
-              className="p-2 h-12 w-12"
+              imageContainerClassName="p-2"
+              imageClassName="h-7 w-7"
+              alt="facebook link"
+            ></DRImageCircleIcon>
+          </Link>
+          <Link href="">
+            <DRImageCircleIcon
+              src="/icons/twitter.svg"
+              backgroundColor="#FFFFFF"
+              imageContainerClassName="p-2"
+              imageClassName="h-7 w-7"
               alt="facebook link"
             ></DRImageCircleIcon>
           </Link>

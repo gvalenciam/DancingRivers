@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Inicio",
+    "href": "",
+    "submenus": [{ "name": "", "href": "", "submenus": [] }]
+  },
+  {
+    "name": "La Ciencia",
+    "href": "",
+    "submenus": [
+      { "name": "Sedimentos", "href": "", "submenus": [] },
+      { "name": "Diversidad de Ríos", "href": "", "submenus": [] },
+      { "name": "Pacaya Samiria", "href": "", "submenus": [] }
+    ]
+  },
+  {
+    "name": "Metodología",
+    "href": "",
+    "submenus": [
+      { "name": "Sensoramiento Remoto", "href": "", "submenus": [] },
+      {
+        "name": "Mediciones de campo",
+        "href": "",
+        "submenus": [
+          { "name": "UHD", "href": "", "submenus": [] },
+          { "name": "UHG", "href": "", "submenus": [] },
+          { "name": "UHS", "href": "", "submenus": [] }
+        ]
+      },
+      {
+        "name": "Modelamiento Numérico",
+        "href": "",
+        "submenus": [
+          { "name": "Escala de análisis", "href": "", "submenus": [] },
+          { "name": "Modelos numéricos", "href": "", "submenus": [] }
+        ]
+      }
+    ]
+  }
+]
